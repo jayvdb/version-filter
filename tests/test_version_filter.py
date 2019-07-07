@@ -81,6 +81,11 @@ def test_specitemmask_modifiers_1():
     assert(Spec('>1.0.0') == s.spec)
 
 
+def test_specitemmask_modifiers_2():
+    s = SpecItemMask('~>1.0.0')
+    assert(Spec('~>1.0.0') == s.spec)
+
+
 def test_coerceable_version():
     s = SpecItemMask('1')
     assert(Spec('1') == s.spec)

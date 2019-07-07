@@ -154,7 +154,7 @@ class SpecItemMask(object):
     YES = 'Y'
     LOCK = 'L'
 
-    re_specitemmask = re.compile(r'^(<|<=||=|==|>=|>|!=|\^|~|~=)([0-9LY].*)$')
+    re_specitemmask = re.compile(r'^(<|<=||=|==|>=|>|!=|\^|~|~=|~>)([0-9LY].*)$')
 
     def __init__(self, specitemmask, current_version=None):
         self.specitemmask = specitemmask
